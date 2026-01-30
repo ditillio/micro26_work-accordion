@@ -22,7 +22,9 @@
 .subtitle {
   font-size: 1.05em;      /* leggermente più grande */
   margin-top: -2rem;
-  margin-bottom: -0.5rem;}
+  margin-bottom: -0.5rem;
+  letter-spacing: 0.06em;
+}
 
 /* avoid grey focus rectangles */
 .chapter_link > a:focus{ outline: none; }
