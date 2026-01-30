@@ -18,8 +18,29 @@
   color: #444;
 }
 
+/* Parti (PARTE I, PARTE II, ...) */
+.subtitle {
+  font-size: 1.05em;      /* leggermente più grande */
+  margin-top: 0rem;
+  margin-bottom: 0rem;}
+
 /* avoid grey focus rectangles */
 .chapter_link > a:focus{ outline: none; }
+
+/* Piccola correzione verticale per i numeri dei capitoli */
+.chapter_link .number {
+  display: inline-block;
+  font-size: 1em;      /* mantieni la dimensione che hai scelto */
+  line-height: 1;         /* evita variazioni di altezza */
+  vertical-align: middle; /* fallback */
+  position: relative;     /* rende possibile il top: */
+  top: -0.1em;           /* sposta il numero leggermente in alto */
+  padding-right: 0.8rem;
+  text-align: right;
+  min-width: 2.2rem;
+  color: #3b3b3b;
+}
+
 
 /* =========================================================
    SEZIONI: underline singola (elimina qualsiasi underline "custom")
