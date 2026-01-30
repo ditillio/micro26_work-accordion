@@ -21,8 +21,8 @@
 /* Parti (PARTE I, PARTE II, ...) */
 .subtitle {
   font-size: 1.05em;      /* leggermente più grande */
-  margin-top: 0rem;
-  margin-bottom: 0rem;}
+  margin-top: -2rem;
+  margin-bottom: -0.5rem;}
 
 /* avoid grey focus rectangles */
 .chapter_link > a:focus{ outline: none; }
