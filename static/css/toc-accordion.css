@@ -1,0 +1,55 @@
+.toc-sections{
+  clear: both;
+  margin-left: 70px;
+  margin-top: 2px;
+}
+
+.toc-section_link{
+  padding: 2px 5px;
+  font-size: 16pt;
+  line-height: 1.15;
+}
+
+.toc-section_number{
+  display: inline-block;
+  width: 45px;
+  text-align: right;
+  padding-right: 12px;
+  color: #444;
+}
+
+/* avoid grey focus rectangles */
+.chapter_link > a:focus{ outline: none; }
+
+/* =========================================================
+   SEZIONI: underline singola (elimina qualsiasi underline "custom")
+   ========================================================= */
+.toc-sections a,
+.toc-section_link a{
+  /* 1) spegniamo QUALSIASI underline custom ereditata */
+  border: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  background: none !important;
+  background-image: none !important;
+
+  /* alcuni temi usano questi per underline "finta" */
+  -webkit-text-decoration-skip: auto !important;
+  text-decoration-skip-ink: auto !important;
+  filter: none !important;
+
+  /* 2) mettiamo UNA sola underline standard */
+  text-decoration-line: underline !important;
+  text-decoration-style: solid !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 0.08em !important;
+}
+
+/* se il tema usa pseudo-elementi per disegnare la linea */
+.toc-sections a::before,
+.toc-sections a::after,
+.toc-section_link a::before,
+.toc-section_link a::after{
+  content: none !important;
+}

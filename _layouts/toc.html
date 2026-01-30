@@ -6,6 +6,7 @@
 <head>
     <title>{{ page.title }}</title>
     {% include stylesheets.html KGversion="0.3.1" bootstrap=false textbook=true %}
+    <link href="{{ site.baseurl }}/static/css/toc-accordion.css" rel="stylesheet" type="text/css">
     {% include favicons.html %}
 </head>
 <body>
@@ -44,5 +45,6 @@
     </article>
 {% include footer.html language=language %}
 {% include scripts.html KGversion='0.3.1' bootstrap=true renderMath=true %}
+<script src="{{ site.baseurl }}/static/js/toc-accordion.js" defer></script>
 </body>
 </html>
